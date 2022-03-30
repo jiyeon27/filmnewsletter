@@ -13,6 +13,10 @@ img{
 div [class*='content_']{
     margin-bottom: 10px;
 }
+
+.off {
+    display: none;
+}
 .span_title {
     font-family: 'Montserrat', sans-serif;
     margin-right: 10px; 
