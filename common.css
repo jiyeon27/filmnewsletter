@@ -113,6 +113,9 @@ ul li:before{
     font-size: 15px;
     margin: 0px;
 }
+.content_noti img{
+    margin-bottom: 20px;
+}
 .content_main .title_head{ 
     font-size: 18px; 
     font-weight: bold; 
