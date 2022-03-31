@@ -114,7 +114,7 @@ ul li:before{
     margin: 0px;
 }
 .content_main .title_head{ 
-    font-size: 20px; 
+    font-size: 18px; 
     font-weight: bold; 
     color: black; 
     border-bottom: 2px solid black; 
@@ -125,15 +125,14 @@ ul li:before{
     display: block;
     margin:10px 0px; 
     margin-bottom:15px;
-    font-size: 18px; 
+    font-size: 15px; 
     font-weight: bold; 
-    line-height: 20px;
     color: black;
 }
 .content_main .span_content{
     display: block;
     margin:10px 0px; 
-    font-size: 18px; 
+    font-size: 15px; 
     color: black;
     word-break:keep-all;
 }
@@ -141,7 +140,7 @@ ul li:before{
     display: block;
     margin:10px 0px; 
     margin-bottom: 20px;
-    font-size: 18px; 
+    font-size: 15px; 
     color: black;
     font-weight: 900;
 }
