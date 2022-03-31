@@ -152,7 +152,7 @@ ul li:before{
 }
 .content_main .float_right{
     float: right;
-    padding: 5px 0px;
+    padding: 0px;
     width: 54%;
 }
 .content_youtube .title_head{
