@@ -146,7 +146,7 @@ ul li:before{
 }
 .content_main .float_left{
     float: left;
-    padding: 10px;
+    padding: 15px;
     width: 40%;
     height: 100%;
 }
