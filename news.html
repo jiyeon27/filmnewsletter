@@ -4,7 +4,253 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" type="text/css" href="./common.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Montserrat&display=swap');
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                
+            }
+            a {
+                text-decoration: none;
+            }
+
+            img{
+                max-width: 640px;
+            }
+            div [class*='content_']{
+                margin-bottom: 10px;
+            }
+
+            .off {
+                display: none;
+            }
+            .span_title {
+                /*font-family: 'Montserrat', sans-serif;*/
+                margin-right: 10px; 
+                font-size: 50px; 
+                font-weight: 800;
+                color: #333333;
+                letter-spacing: -1px;
+
+            }
+            .span_title + div{
+                display: inline-block; 
+                margin-left: -25px;
+                margin-bottom: 50px;
+                width: 70px; 
+                height: 45px;   
+                perspective: 60px;
+                
+
+            }
+            .span_title + div > p{
+                width:100%;
+                height:100%;
+                border-right: 0.1em solid black; 
+                border-left: 0.2em solid black;
+                border-top: 0.13em solid black;
+                border-bottom: 0.13em solid black;
+                transform: rotateY(-20deg) skewY(-5deg);
+                
+            }
+            .div_title{
+                margin-bottom: 30px;
+            }
+            .div_content{
+                margin-top: 10px; 
+                margin-bottom: 30px;
+            }
+            .div_row::after{
+                clear:both;
+                display:block;
+                content: '';
+                margin-bottom: 15px;
+            }
+            .a_box{
+                display: inline-block; 
+                border: 2px solid black; 
+                padding: 10px  10px; 
+                color: #333333;   
+                font-weight: bold; 
+                font-size: 18px; 
+                text-align: center; 
+                background-color: white;
+            }
+            .a_box:hover{
+                background-color: black;
+                color: white;
+            }
+            ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;        
+            }
+            ul li{
+                font-size: 14px;
+            }
+            ul li:before{
+                content: "ㅇ";
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0px 3px 3px 0px;
+                
+            }
+            .span_common{
+                display: block;
+                font-size: 14px;
+                color: black;
+                margin: 10px 0;
+                word-break:keep-all;
+            }
+            .span_common_b{
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+                margin: 10px 0;
+            
+            }
+            .content_noti .span_title{
+                display: block;
+                font-size: 15px;
+                font-weight: 800;
+                margin: 0px;
+            }
+            .content_noti .span_content{
+                display: block;
+                font-size: 15px;
+                margin: 0px;
+            }
+            .content_noti img{
+                margin-bottom: 20px;
+            }
+            .content_main .title_head{ 
+                font-size: 18px; 
+                font-weight: bold; 
+                color: black; 
+                border-bottom: 2px solid black; 
+                line-height: 20px;
+                
+            }
+            .content_main img{
+                min-height: 230px;
+            }
+            .content_main .title_middle{
+                display: block;
+                margin:10px 0px; 
+                margin-bottom: 10px;
+                font-size: 15px; 
+                font-weight: bold; 
+                color: black;
+            }
+            .content_main .span_content{
+                display: block;
+                margin: 5px 0px; 
+                font-size: 15px; 
+                color: black;
+                word-break:keep-all;
+            }
+            .content_main .span_content_b{
+                display: block;
+                margin:10px 0px; 
+                margin-bottom: 10px;
+                font-size: 15px; 
+                color: black;
+                font-weight: 900;
+            }
+            .content_main .float_left{
+                float: left;
+                padding: 15px 8px;
+                width: 40%;
+                height: 100%;
+            }
+            .content_main .float_right{
+                float: right;
+                padding: 0px;
+                width: 54%;
+            }
+            .content_youtube .title_head{
+                font-size: 18px; 
+                font-weight: bold; 
+                color: black; 
+                border-bottom: 2px solid black; 
+                line-height: 18px;
+            }
+            .content_youtube .title_middle{
+                display: block;
+                margin-top: 10px; 
+                font-size: 16px; 
+                font-weight: bold; 
+                color : black;
+            }
+            .content_youtube .title_content{
+                display: block; 
+                margin-bottom: 15px;
+                font-size: 13px; 
+                font-weight: bold; 
+                color : black;
+            }
+            .content_youtube .float_left{
+                float: left;
+                padding: 10px;
+                margin-right: 5px;
+                width: 45%;
+            }
+            .content_youtube .float_right{
+                float: right;
+                padding: 10px;
+                width: 45%;
+            }
+            .content_movie .title_head{
+                font-size: 14x; 
+                font-weight: bold; 
+                color: black; 
+            }
+            .content_movie .title_middle{
+                display: block;
+                margin-top: 10px; 
+                font-size: 12px; 
+                font-weight: bold; 
+                color : black;
+            }
+            .content_movie .float_left{
+                float: left;
+                padding: 5px;
+                margin-right: 7px;
+                width: 25%;
+            }
+            .content_movie .float_right{
+                float: right;
+                padding: 12px 0px;
+                width: 70%;
+            }
+
+            .content_movie hr{
+                width: 100%;
+                color: black;
+                border-bottom: 0px solid black;
+            }
+            .content_footer {
+                vertical-align: middle; 
+                padding: 0px;
+            }
+            .content_footer .float_left{
+                float: left;
+                padding: 5px;
+                width: 30%;
+            }
+            .content_footer .float_right{
+                float: right;
+                text-align: right;
+                padding: 5px 0px;
+                width: 65%;
+            }
+            .content_footer .sns_icon{
+                width: 35px;
+                height: 35px;
+                margin-right:10px;
+            }
+        </style>
     </head>
     <body style="background-color: #ffffff; ">
         <div style="width: 640px; margin: auto;">
