@@ -60,12 +60,7 @@
                 margin-top: 10px; 
                 margin-bottom: 30px;
             }
-            .div_row::after{
-                clear:both;
-                display:block;
-                content: '';
-                margin-bottom: 15px;
-            }
+          
             .a_box{
                 display: inline-block; 
                 border: 2px solid black; 
@@ -158,14 +153,18 @@
                 color: black;
                 font-weight: 900;
             }
+            .content_main .div_row{
+                display: flex;
+            }
             .content_main .float_left{
-                float: left;
+                order: 1;
                 padding: 15px 8px;
+                margin-right: 15px;
                 width: 40%;
                 height: 100%;
             }
             .content_main .float_right{
-                float: right;
+                order: 2;
                 padding: 0px;
                 width: 54%;
             }
@@ -213,14 +212,19 @@
                 font-weight: bold; 
                 color : black;
             }
+            .content_movie .div_row{
+                display:flex;
+                flex-direction: row;
+            }
             .content_movie .float_left{
-                float: left;
+                order: 1;
                 padding: 5px;
                 margin-right: 7px;
-                width: 25%;
+                width: 30%;
             }
             .content_movie .float_right{
-                float: right;
+                order: 2;
+                margin: top 15px;
                 padding: 12px 0px;
                 width: 70%;
             }
@@ -261,7 +265,7 @@
                     <a href="https://www.koreafilm.or.kr/" target="_blank" title="한국영상자료원 홈페이지"><img src="images/logo.png" alt="한국영상자료원 로고" width="144"   height="41" /></a>
                 </div>
                 <div  style="float:right; width: 30%;  text-align: right; vertical-align: bottom; ">
-                    <div style=" font-size: 20px; font-weight: bold ; ; ">2022. 4. 5</div>
+                    <div style=" font-size: 20px; font-weight: bold ; ; ">2022. 4. 4</div>
                 </div>
             </div>
             <!-- header e -->
@@ -499,7 +503,7 @@
             <!--  kofa collection s-->    
             <div class="content_collection">
                 <div class="div_title">
-                    <span class="span_title"> KOFA COLLECTION </span><div><p style="background-color: #0000FE;"></p></div>
+                    <span class="span_title"> KOFA COLLECTION </span><p style="background-color: #0000FE;"></p>
                 </div>
                 <div class="div_content">
                     <img src="images/img_4.jpeg" title="kofa_collection" width="100%;" >
@@ -515,6 +519,7 @@
                         <a class="a_box" href="https://www.koreafilm.or.kr/collection/CI_00000021" target="_blank">
                             + 더보기
                         </a><br /><br />
+                    </div>
                 </div>
             </div>
             <!--  kofa collection e-->
@@ -527,34 +532,38 @@
                         <span class="span_title"> 볼만한 영화글 </span><div><p style="background: red;"></p></div>
                     </a>
                 </div>
-                    
+
                 <div class="div_content">
-                    <div class="div_row">
+                    <div >
                         <a href="https://www.kmdb.or.kr/story/419/6407" target="_blank" title="사마귀가 사마귀를 먹다">
-                            <div  class="float_left" >
-                                <img src="images/movie1.png" title="영화이미지" width="100%" >
-                            </div>
-                            <div  class="float_right" >
-                                <span class="title_head">액션과 폭력의 계열들</span>
-                                <span class="title_middle">1970년대식 섹스와 폭력, 여감방 영화와 <여수 407호> by.이영재(영화연구가)</span>
-                                <hr>
-                                <span class="span_common">동시대 누구보다 민감한 국제적 감각의 소유자였던 신상옥은 영화의 위상 변화를 절감하고 있었다.</span>    
+                            <div class="div_row">
+                                <div  class="float_left" >
+                                    <img src="images/movie1.png" title="영화이미지" width="100%" >
+                                </div>
+                                <div  class="float_right" >
+                                    <span class="title_head">액션과 폭력의 계열들</span>
+                                    <span class="title_middle">1970년대식 섹스와 폭력, 여감방 영화와 <여수 407호> by.이영재(영화연구가)</span>
+                                    <hr>
+                                    <span class="span_common">동시대 누구보다 민감한 국제적 감각의 소유자였던 신상옥은 영화의 위상 변화를 절감하고 있었다.</span>    
+                                </div>
                             </div>
                         </a>
                     </div>
 
-                    <div class="div_row">
+                    <div >
                         <a href="https://www.kmdb.or.kr/story/416/6428" target="_blank" title="사마귀가 사마귀를 먹다">
-                            <div  class="float_left">
-                                <img src="images/movie2.png" title="영화이미지" width="100%" >
-                            </div>
-                            <div  class="float_right"   >
-                                <span class="title_head">액션과 폭력의 계열들</span>
-                                <span class="title_middle">한국 영화에서 길을 잃은 한국 사람들 (12) by.정지돈(작가) </span>
-                                <hr>
-                                <span class="span_common">
-                                    우리는 21세기 첫 20년 후의 대한민국이라는 편집증적 세계 속에서 <br />
-                                    영화를 경유해 길을 찾을 수 있을까? 아니면 그 반대가 될까.</span>    
+                            <div class="div_row">
+                                <div  class="float_left">
+                                    <img src="images/movie2.png" title="영화이미지" width="100%" >
+                                </div>
+                                <div  class="float_right"   >
+                                    <span class="title_head">액션과 폭력의 계열들</span>
+                                    <span class="title_middle">한국 영화에서 길을 잃은 한국 사람들 (12) by.정지돈(작가) </span>
+                                    <hr>
+                                    <span class="span_common">
+                                        우리는 21세기 첫 20년 후의 대한민국이라는 편집증적 세계 속에서 <br />
+                                        영화를 경유해 길을 찾을 수 있을까? 아니면 그 반대가 될까.</span>    
+                                </div>
                             </div>
                         </a>
                     </div>
