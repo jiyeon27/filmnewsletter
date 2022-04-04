@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                
+            }
+            a {
+                text-decoration: none;
+            }
+
+            img{
+                max-width: 640px;
+            }
+
+            .span_common{
+                display: block;
+                font-size: 14px;
+                color: black;
+                margin: 10px 0;
+                word-break:keep-all;
+            }
+            .span_common_b{
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+                margin: 10px 0;
+            
+            }
+            .a_box{
+                display: inline-block; 
+                border: 2px solid black; 
+                padding: 10px  10px; 
+                color: #333333;   
+                font-weight: bold; 
+                font-size: 18px; 
+                text-align: center; 
+                background-color: white;
+            }
+            .a_box:hover{
+                background-color: black;
+                color: white;
+            }
+            .span_title {
+                /*font-family: 'Montserrat', sans-serif;*/
+                margin-right: 10px; 
+                font-size: 50px; 
+                font-weight: 800;
+                color: #333333;
+                letter-spacing: -1px;
+
+            }
+            .span_title + div{
+                display: inline-block; 
+                margin-left: -25px;
+                margin-bottom: 50px;
+                width: 70px; 
+                height: 45px;   
+                perspective: 60px;
+                
+
+            }
+            .span_title + div > p{
+                width:100%;
+                height:100%;
+                border-right: 0.1em solid black; 
+                border-left: 0.2em solid black;
+                border-top: 0.13em solid black;
+                border-bottom: 0.13em solid black;
+                transform: rotateY(-20deg) skewY(-5deg);
+            }
+            .content_noti .span_title{
+                display: block;
+                font-size: 15px;
+                font-weight: 800;
+            }
+            .content_noti .span_content{
+                display: block;
+                font-size: 15px;
+                margin: 0px;
+            }
+            .content_noti img{
+                margin-bottom: 20px;
+            }
+            .content_main img{
+                min-width: 280px;
+                min-height: 230px;
+            }
+
+            .content_main td{
+                padding: 10px;
+            }
+
+            .content_main .title_head{ 
+                font-size: 18px; 
+                font-weight: bold; 
+                color: black; 
+                border-bottom: 2px solid black; 
+                line-height: 20px;
+            }
+
+            .content_main .title_middle{
+                display: block;
+                margin:10px 0px; 
+                margin-bottom: 10px;
+                font-size: 15px; 
+                font-weight: bold; 
+                color: black;
+            }
+            .content_main .span_content{
+                display: block;                
+                margin: 5px 0px; 
+                font-size: 15px; 
+                color: black;
+                word-break:keep-all;
+            }
+            .content_main .span_content_b{
+                display: block;
+                margin:10px 0px; 
+                margin-bottom: 10px;
+                font-size: 15px; 
+                color: black;
+                font-weight: 900;
+            }
+            .content_movie img{
+                width: 180px;
+            }
+            .content_movie td{
+                padding-bottom: 10px;
+            }
+            .content_movie .title_head{
+                font-size: 14x; 
+                font-weight: bold; 
+                color: black; 
+            }
+            .content_movie .title_middle{
+                display: block;
+                margin-top: 10px; 
+                font-size: 12px; 
+                font-weight: bold; 
+                color : black;
+            }
+            .sns_icon{
+                width: 35px;
+                height: 35px;
+                margin-right:10px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #ffffff; ">
+        <center>
+            <table width="640" cellpadding="0" cellspacing="0" border="0" align="center" >
+                <tr><td colspan="2" height="30"></td></tr>
+                <tr>
+                    <td>
+                        <a href="https://www.koreafilm.or.kr/" target="_blank" title="한국영상자료원 홈페이지"><img src="images/logo.png" alt="한국영상자료원 로고" width="144"   height="41" /></a>
+                    </td>
+                    <td valign="bottom" align="right">
+                        <span>2022. 4. 4</span>
+                    </td>
+                </tr>
+                <tr><td colspan="2" height="20"></td></tr>
+                <tr  class="content_noti">
+                    <td colspan="2">
+                        <img width="100%" src="images/title.png" alt="뉴스레터 로고">
+                    </td>
+                </tr>
+                <tr class="content_noti">
+                    <td colspan="2">
+                        <img src="images/main.png" alt="이미지">
+                    </td>
+                </tr>
+                <tr class="content_noti">
+                    <td colspan="2">
+                        <span  class="span_title">
+                            매년 4월 23일은 책 읽는 날! 여러분은 ‘세계 책의 날’을 들어보셨나요?
+                        </span>
+                        <span class="span_content">
+                            1995년부터 유네스코 총회에서는 ‘세인트 조지의 날’과 세르반테스, 셰익스피어가 동시에 세상을 <br />
+                             떠나간 날을 ‘세계 책의 날’로 지정하고 독서와 출판을 장려해왔습니다. 
+                        </span>
+                        <br />
+                        <span class="span_title">
+                            뜬금없이 웬 책 이야기냐구요?
+                        </span>
+                        <span class="span_content">
+                            바로 ‘세계 책의 날’을 맞아, 시네마테크KOFA에서 <파워 오브 스토리> 기획전이 열린다는 따끈따끈한 <br /> 
+                            소식을 전해드리려고요! <br />
+                        </span> 
+                        <br />
+                        <span class="span_title">
+                            봄의 따스함이 가득한 4월,
+                        </span>
+                        <span class="span_content">
+                            많은 독자들에게 오랫동안 사랑받았던 문학작품들을 원작으로 만들어진 영화 8편이 관객여러분들을<br />
+                            찾아갑니다. 소설들을 읽으면서 상상했던 장면들을 스크린 위에서 만날 수 있다고 생각하니<br />
+                            벌써부터 가슴이 두근거리네요. <br /><br />
+                            이번 뉴스레터에서는 한국영상자료원의 대표적인 사업 중 하나인 시네마테크KOFA 사업에 대해 <br />
+                            간략히 소개해드릴게요. 그에 더해 <파워 오브 스토리> 의 담당자 오성지 프로그래머에게 <br />
+                            직접 듣는 <파워 오브 스토리>기획전의 모든 것! 인터뷰도 준비되어있으니 기대해주세요. <br /><br />
+        
+                            마지막으로, <br />
+                            기획전에서 상영되는 8편의 영화에 대한 작품소개와 상영일정등도 상세히 설명 드릴 테니 <br />
+                            체크해두시면 좋겠죠? 그럼, 출발합니다!<br />
+                        </span>
+                        <br />
+                        <h2 style="margin:10px 0px;">
+                            <a href="https://www.koreafilm.or.kr/kofa/news/notice/BC_0000058276?page=&keyWord=&keyField=" target="_blank" class="a_box" title="더보기">+ 더보기</a>
+                        </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="40">
+                        <br /><hr><br />
+                    </td>
+                </tr>
+                <tr class="content_main">
+                    <td>
+                        <img src="images/img_1.png"  title="안내이미지" width="100%" >
+                    </td>
+                    <td>
+                        <span class="title_head">NOW SHOWING <br /></span>
+                        <span class="title_middle"> 갑질은 영혼을 잠식한다: 우리 회사 빌런들 </span>
+                        <span class="span_content">
+                            미국, 일본, 영국 등에서 제작된 직장, <br />
+                            조직 문화를 담은 영화들,<br />
+                            이를 통해 우리의 현주소를 진단해 볼까요? <br />
+                        </span>
+                        <span class="span_content_b">
+                            상영기간: 2022.04.01.(금) ~ 04.07.(목)<br />
+                            장소: 시네마테크KOFA 1관 <br />
+                        </span>
+                        <a href="https://www.koreafilm.or.kr/cinematheque/programs/PI_01394" target="_blank" title="상세정보" class="a_box">+ 더보기</a>
+                    </td>
+                </tr>
+                <tr class="content_main">
+                    <td width="300">
+                        <img src="images/img_2.png"  title="안내이미지" width="100%" >
+                    </td>
+                    <td width="340"> 
+                        <span class="title_head">NOW SHOWING <br /></span>
+                        <span class="title_middle">허우 샤오시엔의 로.코 3부작  </span>
+                        <span class="span_content">
+                            대만을 대표하는 감독 '허우 샤오시엔' 그의 초기 <br />
+                            로맨틱 코미디 영화로 달콤한 봄날을 보내요! <br />
+                            <고향의 푸른 잔디> 상영 후 <br />
+                            유운성 평론가 강연 예정<br />
+                        </span>
+                        <span class="span_content_b">
+                            상영기간: 2022.04.08.(금) ~ 04.10.(일)<br />
+                            장소: 시네마테크KOFA 1관 <br />
+                        </span>
+                        <a href="https://www.koreafilm.or.kr/cinematheque/programs/PI_01395" target="_blank" title="상세정보" class="a_box">+ 더보기</a>
+                    </td>
+                </tr>
+                <tr class="content_main">
+                    <td width="300">
+                        <img src="images/img_3.png"  title="안내이미지" width="100%" >
+                    </td>
+                    <td width="340">
+                        <span class="title_head">NOW SHOWING <br /></span>
+                        <span class="title_middle">4월 프로그래머의 초이스 </span>
+                        <span class="span_content">
+                            조안나 호그의 <수베니어 파트 2> <br />
+                            영화학교 학생으로 영화를 만드는 주인공 줄리, <br />
+                            그녀가 겪는 번민과 혼란을 섬세하고 <br />
+                            사실적으로 그린 영화예요!<br />
+                        </span>
+                        
+                        <span class="span_content_b">
+                            상영기간 : 2022.04.13.(수) ~ 04.15.(금) <br />
+                            장소: 시네마테크KOFA 1관<br />
+                        </span>
+                        <a href="https://www.koreafilm.or.kr/cinematheque/programs/PI_01392" target="_blank" title="상세정보" class="a_box">+ 더보기</a>
+                    </td>
+                </tr>
+
+                <tr class="content_main">
+                    <td width="300">
+                        <img src="images/edu1.png"  title="안내이미지" width="100%" >
+                    </td>
+                    <td width="340">
+                        <span class="title_head">EDUCATION <br /></span>
+                        <span class="title_middle">
+                            KOFA 라이브 키즈 클럽 오스카는 애완 문어
+                        </span>
+                        <span class="span_content">
+                            매달 영화 속 새로운 주제와 연계한 어린이 대상 <br />
+                            스토리텔링 및 창작 활동<br />
+                        </span>
+                        <span class="span_content_b">
+                            교육일: 2022.4.22.(금) 17시/실시간 온라인(zoom) <br />
+                            신청일: 2022.4.12.(화) 오전 10시부터 선착순 10명 <br />
+                        </span>
+                        <a href="https://www.koreafilm.or.kr/museum/educations/EI_00228?page=&paramYear=&keyWord=" target="_blank" title="상세정보" class="a_box">+ 더보기</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="40">
+                        <br /><hr><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span class="span_title"> 4월의 한국고전영화 </span><div><p style="background: #00FF01;"></p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/classic.png" title="영화이미지" width="100%;" >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p style="font-size: 20px; font-weight: bold;" >
+                            어제 내린 비
+                        </p>
+                        <span  class="span_common_b">
+                            이장호 | 1975 | 102분 | 고등학생 이상 관람가 
+                        </span>
+                        <span  class="span_common">
+                            판이한 성격의 이복형제 영후와 영욱은 서로에게 알 수 없는 친밀감을 갖는다.  <br />
+                            영욱의 애인 민정을 처음 본 순간부터 사랑하게 된 영후는 애써 그녀를 피하나 자신의 생모가 재혼하던날 밤 <br />
+                            엉켜진 기분에서 민정을 만나 함께 밤을 지내고 만다. 그후 영후는 죄책감에 침울해 하고  <br />
+                            영욱은 민정이 영후를 사랑한다고 고백하자 절망에 빠지는데... <br />
+
+                        </span>
+                        <p style="font-size: 15px; font-weight: bold;" >
+                            *매월 1일 네이버TV / 유투브 <한국고전영화>에서 고전영화 1편씩 업데이트 합니다.
+                        </p>
+                        <br />
+                        <a class="a_box" href="https://www.youtube.com/watch?v=h3DYIjreiH8" target="_blank">
+                            + 더보기
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" height="40">
+                        <br /><hr><br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="div_title">
+                            <span class="span_title"> KOFA COLLECTION </span><div><p style="background-color: #0000FE;"></p></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img src="images/img_4.jpeg" title="kofa_collection" width="100%;" >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p style="font-size: 20px; font-weight: bold;" >
+                            문화영화로 보는 위생과 국민보건
+                        </p>
+                        <span  class="span_common">
+                            한국영상자료원에서는 수집, 복원한 영상 자료들을 체계적인 연구와  큐레이션을 통해 <br />
+                            'KOFA 컬렉션'이라는 이름으로 공개해요! 이번 주제는 '문화영화로 보는 위생과 국민보건'이에요!<br />
+                        </span>
+                        <br /><br />
+                        <a class="a_box" href="https://www.koreafilm.or.kr/collection/CI_00000021" target="_blank">
+                            + 더보기
+                        </a><br /><br />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="div_title">
+                            <a href="https://www.kmdb.or.kr/story/main" target="_blank" title="볼만한 영화글 더 보러가기" >
+                                <span class="span_title"> 볼만한 영화글 </span><div><p style="background: red;"></p></div>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr><td colspan="2" height="30"></td></tr>
+                <tr class="content_movie">
+                    <td colspan="2">
+                        <table cellpadding="0" cellspacing="0" border="0" >
+                            <tbody>
+                                <tr>
+                                    <td width="190">
+                                        <img src="images/movie1.png" title="영화이미지" width="100%" >
+                                    </td>
+                                    <td width="450">
+                                        <span class="title_head">액션과 폭력의 계열들</span>
+                                        <span class="title_middle">1970년대식 섹스와 폭력, 여감방 영화와 <여수 407호> by.이영재(영화연구가)</span>
+                                        <hr>
+                                        <span class="span_common">동시대 누구보다 민감한 국제적 감각의 소유자였던 신상옥은 영화의 위상 변화를 절감하고 있었다.</span>    
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td> 
+                </tr>
+                <tr class="content_movie">
+                    <td colspan="2">
+                        <table cellpadding="0" cellspacing="0" border="0">
+                            <tbody>
+                                <tr>
+                                    <td width="190">
+                                        <img src="images/movie2.png" title="영화이미지" width="100%" >
+                                    </td>
+                                    <td width="450">
+                                        <span class="title_head">액션과 폭력의 계열들</span>
+                                        <span class="title_middle">한국 영화에서 길을 잃은 한국 사람들 (12) by.정지돈(작가) </span>
+                                        <hr>
+                                        <span class="span_common">
+                                            우리는 21세기 첫 20년 후의 대한민국이라는 편집증적 세계 속에서 <br />
+                                            영화를 경유해 길을 찾을 수 있을까? 아니면 그 반대가 될까.
+                                        </span>        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+                <tr><td colspan="2" height="30"></td></tr>
+                <tr><td colspan="2" height="30"></td></tr>
+                <tr>
+                    <td colspan="2" style="background-color: #FFFF01; border: 1px solid black; padding: 10px 20px; margin-bottom: 40px;">
+                        <p style="font-size: 25px; font-weight: bold; margin: 10px 0px;">
+                            오늘의 뉴스레터는 여기까지! <br />
+                        </p>
+                        <span class="span_common">
+                            당신에게 가장 흥미로웠고 유익했던 소식은 무엇이었나요? <br />
+                        </span>
+                        <a href="https://forms.gle/YLnKB2dXfLczmNBeA" target="_blank" title="오늘 레터 어땠나요?" class="a_box">+ 오늘 레터 어땠나요?</a>
+                        <br /><br />
+                        <span style="font-size:16px; font-weight: bold;">
+                            한국영상자료원 정기 뉴스레터는 월 2회(매월 첫째 주, 셋째 주 월요일) 발송됩니다. <br /><br />
+                        </span>
+                        <a href="https://www.koreafilm.or.kr/kofa/news/notice/BC_0000058205?page=1&keyWord=%5B%EB%89%B4%EC%8A%A4%EB%A0%88%ED%84%B0%5D&keyField=all" target="_blank" title="지난 뉴스레터 메인 보러가기" class="a_box">
+                            + 지난 뉴스레터 메인콘텐츠 보기 
+                        </a>
+                        <br /><br />
+                    </td>
+                </tr>
+                <tr><td colspan="2" height="30"></td></tr>
+                <tr><td colspan="2" height="30"></td></tr>
+                <tr>
+                    <td >
+                        <a href="https://www.koreafilm.or.kr/" target="_blank" title="한국영상자료원 홈페이지"><img src="images/logo.png" alt="한국영상자료원 로고" /></a>
+                    </td>
+                    <td  align="right">
+                        <a href="https://www.youtube.com/user/KoreanFilm" target="_blank" title="유튜브"><img src="images/sns_1.png" class="sns_icon" alt="유튜브" /></a> 
+                            <a href="https://www.instagram.com/koreanfilmarchive/" target="_blank" title="인스타그램"><img src="images/sns_2.png"  class="sns_icon" alt="인스타그램" /></a>
+                            <a href="http://tv.naver.com/koreanfilm" target="_blank" title="네이버TV"><img src="images/sns_5.png"  class="sns_icon" alt="네이버TV" /></a> 
+                            <a href="https://twitter.com/Film_Archive" target="_blank" title="트위터"><img src="images/sns_3.png" class="sns_icon"alt="트위터" /></a> 
+                            <a href="https://www.facebook.com/koreanfilmarchive" target="_blank" title="페이스북"><img src="images/sns_4.png" class="sns_icon"  alt="페이스북" /></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" >
+                        <span class="span_common_b">
+                            (03925) 서울시 마포구 월드컵북로 400 한국영상자료원<br />
+                            대표전화 : 02-3153-2001 / FAX : 02-3153-2080<br />
+                            ALL RIGHTS RESERVED. E-MAIL : news@koreafilm.or.kr
+                        </span>
+                        <hr>
+                        <span class="span_common">
+                            이 뉴스레터는 “정보통신망 이용 촉진 및 정보 보호 등에 관한 법률 및 시행규칙”을 준수합니다.<br />
+                            본 메일은 발신전용 메일이므로 회신하실 경우 답변 및 처리가 되지 않습니다.<br /><br />
+
+
+                            
+                            더 이상 수신을 원치 않으시면 
+                            <a href="https://www.koreafilm.or.kr/member/login" target="_blank" title="수신거부" style="color: #333333;"><b>[수신거부]</b></a>를 눌러주시기 바랍니다.<br />
+                            한국영상자료원 누리집 로그인 - 마이페지 - 내정보관리 - 뉴스레터 수신 동의 해지 클릭<br />
+                        </span>
+                    </td>
+                </tr>
+    
+            </table>
+        </center>
+    </body>
+</html>
